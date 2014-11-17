@@ -1,0 +1,16 @@
+calculator.default_controller_hello:
+  path: 'calculator/hello/{name}'
+  defaults:
+    _content: '\Drupal\calculator\Controller\DefaultController::hello'
+    _title: 'calculator Title'
+  requirements:
+    _permission: 'access content'
+
+calculator.calculator_form:
+  path: '/calculator/settings/CalculatorForm'
+  defaults:
+    _form: '\Drupal\calculator\Form\CalculatorForm'
+    _title: 'calculator CalculatorForm Form'
+  requirements:
+    _permission: 'access administration pages'
+

@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains calculator.module
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+
+function calculator_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    // Main module help for the calculator module.
+    case 'help.page.calculator':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('calculator demo') . '</p>';
+      return $output;
+    break;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+
+function calculator_theme()
+{
+  $theme = [];
+
+  return $theme;
+}
