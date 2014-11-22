@@ -24,7 +24,10 @@ class CalculatorForm extends ConfigFormBase
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $config = $this->config('calculator.calculator_form_config');
+     $form['#attached']['js'] = array(
+         drupal_get_path('module', 'calculator').'/js/calculator.js' 
+     );
+     $config = $this->config('calculator.calculator_form_config');
     $form['display'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Display'),
