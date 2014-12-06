@@ -37,27 +37,28 @@ class CalculatorForm extends ConfigFormBase
     ];
     
     for($i =0 ; $i < 10 ; $i++) {
-		$form[$i] = [
-		  '#type' => 'button',
-		  '#value' => $i ,
-		  '#title' => $this->t($i),
-		  '#description' => $this->t(''),
-		  '#default_value' => $config->get($i),
-		];
+      $form[$i] = [
+        '#type' => 'button',
+        '#value' => $i ,
+	'#title' => $this->t($i),
+	'#description' => $this->t(''),
+	'#default_value' => $config->get($i),
+      ];
     }
     
-    $funciones = array(
-		'+' , '-' , '*' , '/', '=', 'AC', 'Clr' 	
-    );
+    $funciones = array('+' , '-' , '*' , '/', '=', 'AC', 'Clr');
     for($i =0 ; $i < count($funciones) ; $i++) {
-		$form[$funciones[$i]] = [
-		  '#type' => 'button',
-		  '#value' => $funciones[$i],
-		  '#title' => $this->t($funciones[$i]),
-		  '#description' => $this->t(''),
-		  '#default_value' => $config->get($funciones[$i]),
-		];
-	}
+      $form[$funciones[$i]] = [
+        '#type' => 'button',
+        '#value' => $funciones[$i],
+        '#title' => $this->t($funciones[$i]),
+        '#description' => $this->t(''),
+        '#attributes' => array(
+            'id' => 'op-'.$funciones[$i],
+        ),
+        '#default_value' => $config->get($funciones[$i]),
+      ];
+    }
     
     return parent::buildForm($form, $form_state);
   }
