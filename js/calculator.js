@@ -22,7 +22,7 @@
        /*
 	    * Es el punto para decimales.
 	    */
-       $('#edit-pto').click(function(event){
+       $('#op-pto').click(function(event){
            if(nuevo)
 		      var num = $('#edit-display').val() + '.';
 		   else {
