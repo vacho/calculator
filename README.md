@@ -9,3 +9,10 @@ PASOS DE INSTALACION DEL MODULO:
 * Instalar drupal 8 beta 2
 * Clonar el proyecto dentro de la carpeta modules
 * Activar el modulo desde el interface de drupal (pestaña extencion)
+
+EJECUTAR TEST AUTOMÁTICO:
+==============================
+
+* Activar el módulo "Testing"
+* Desde la consola de linux y estando en el root de drupal: 
+php core/scripts/run-tests.sh calculator
