@@ -31,7 +31,7 @@ class CalculatorTest extends WebTestBase {
    * Test all paths exposed by the module, by permission.
    */
   public function testPaths() {
-    $this->drupalGet('calculator/settings/CalculatorForm');  
+    $this->drupalGet('calculator/settings/CalculatorForm');
   }  
 
 }
