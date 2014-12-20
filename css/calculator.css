@@ -1,0 +1,31 @@
+.calculator-form .button:first-child{  
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.calculator-form .cero-pto {
+  margin-left: 73px;
+}
+
+.calculator-form .numeros {
+  float: left;
+  padding: 10px;
+}
+
+.calculator-form .oper {
+  overflow: hidden;
+  background: #eee;
+  max-width: 165px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 7px;
+}
+
+#edit-display {
+  width: 422px;
+  height: 50px;
+  text-align: right;
+  font-size: 25px;
+  padding-right: 15px;
+  border-radius: 7px;
+}
