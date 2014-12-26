@@ -12,7 +12,14 @@ PASOS DE INSTALACION DEL MODULO:
 
 EJECUTAR TEST AUTOMÁTICO:
 ==============================
-
+Test con simpletest
 * Activar el módulo "Testing"
 * Desde la consola de linux y estando en el root de drupal: 
 php core/scripts/run-tests.sh calculator
+
+Por hacer:
+==========
+* Test con phpunit.
+* Theming avanzado.
+* Documentación.
+* Standarización de código
