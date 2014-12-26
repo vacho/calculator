@@ -23,3 +23,4 @@ Por hacer:
 * Theming avanzado.
 * Documentación.
 * Standarización de código
+* Portar a Durpal 8 Beta-4
